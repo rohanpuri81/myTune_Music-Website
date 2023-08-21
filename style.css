@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root{
+    --purple500:#281154;
+    --purple300:#270082;
+    --purple600:#1b0058;
+    --red600:#dc0000;
+    --body:#f9f6ff;
+    --max-width:1200px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    scroll-margin: 50px;
+}
+html,body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    /* scroll-behavior: smooth; */
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+header{
+    background-color: var(--purple300);
+    position: sticky;
+    top: 0;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    z-index: 100;
+}
+.container{
+    max-width: 1200px;
+    margin:0 auto;
+
+}
+.logo{
+    font-size: 32px;
+    font-weight: 600;
+}
+nav{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    color: white;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+    
+}
+nav ul li{
+    border-bottom: 2px solid var(--purple300);
+    transition: 0.2s ease-in;
+}
+nav ul li:hover{
+    border-bottom: 2px solid aliceblue;
+    transition: 0.2s ease-in;
+}
+.hero-section{
+    background-image: url(hero_image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: grid;
+    color: white;
+    place-items: center;
+    text-align: center;
+}
+.hero-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.hero-section h1{
+    font-size: 96px;
+}
+.hero-section h3{
+    font-size: 32px;
+}
+.music-section{
+    padding-top: 50px;
+    background-color: var(--purple500);
+
+}
+.music-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.ipad-iphone-img{
+    position: relative;
+    top: 400px;
+    margin-top: -400px;
+}
+button{
+    padding: 10px 15px;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+button:hover{
+    opacity: 0.8;
+    transition: 0.2 ease-in-out;
+}
+.primary-btn{
+    background-color: var(--red600);
+    color: white;
+}
+.secondary-btn{
+    background-color: var(--purple300);
+    color: white;
+}
+.about-music{
+    padding-top: 500px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    margin-bottom:50px ;
+    gap: 50px;
+}
+.video-section{
+    background-image: url(video.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 800px;
+    display: grid;
+    place-items: center;
+    color: white;
+    text-align: center;
+}
+.video-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: -200px;
+}
+.gift-section{
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+    gap: 50px;
+}
+
+.gift-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-upper{
+    background-color: var(--purple600);
+    padding: 20px;
+}
+.footer-upper .container{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+.footer-upper{
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+    margin-bottom: 10px;
+
+}
+.footer-lower{
+    background-color: var(--purple300);
+    padding: 20px;
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+
+@media (max-width:755px) {
+    nav{
+        flex-direction: column;
+    }
+    nav ul{
+        margin-top: 10px;
+        flex-direction: column;
+    }
+    .hero-section h1{
+        font-size: 43px;
+    }
+    .hero-section h3{
+        font-size: 22px;
+    }
+    .ipad-iphone-img img{
+        width: 95%;
+        margin-top: 5px;
+    }
+    .container{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .mac-img img{
+        width: 95%;
+    }
+    .gift-section{
+        flex-direction: column;
+    }
+    .gift-card img{
+        width: 90%;
+    }
+    .shutter{
+        flex-direction: column;
+    }
+    .footer-links{
+        margin-top: 22px;
+    }
+    header{
+        position: relative;
+    }
+}
